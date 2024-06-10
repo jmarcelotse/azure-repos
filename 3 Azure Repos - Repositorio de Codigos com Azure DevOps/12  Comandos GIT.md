@@ -210,3 +210,59 @@ Quando você trabalha com Azure Repos, a maioria dos comandos Git que você usa 
 # Resumo
 
 Esses comandos Git, quando combinados com as práticas de Pull Requests e Code Reviews no Azure Repos, fornecem um fluxo de trabalho poderoso e eficiente para o desenvolvimento de software colaborativo. Azure Repos se integra perfeitamente com o Git, permitindo que você use os comandos Git que já conhece, enquanto aproveita as funcionalidades adicionais oferecidas pelo Azure DevOps.
+
+Inicializar o repositorio local
+git init
+
+Cria uma copia local de um repositorio remoto
+git clone
+
+Checa o status
+git status
+
+Adiciona um arquivo para aera de stage
+git add [nome-arquivo.txt]
+
+Adiciona todos os arquivos novos ou modificados para a area de stage
+git add -A
+
+Remoce um arquivo ou pasta
+git rm -r [nome-arquivo.txt]
+
+Lista as branches
+git branch
+
+Lista todas as branches (local e remota)
+git branch -a
+
+Cria uma nova branch
+git branch [nome da branch]
+
+Deleta uma branch
+git branch -d [nome da branch]
+
+git push origin --delete [nome da branch]
+
+Cria uma nova branch e muda para ele
+git checkout -b [nome da branch]
+
+Clona uma branch remota e muda para ele
+git checkout -b oringin [nome da branch] origin/[nome da branch]
+
+seleciona uma branch
+git checkout [nome da branch]
+
+Muda para ultima branch
+git checkout -
+
+Descarta modificações de um arquivo
+git checkout -- [nome-arquivo.txt]
+
+Faz um merge de uma branch na branch atual
+git merge [nome da branch]
+
+Envia as alterações para o repositorio remoto (branch atual)
+git push
+
+Atualiza o repositorio local para o ultimo commit
+git pull
